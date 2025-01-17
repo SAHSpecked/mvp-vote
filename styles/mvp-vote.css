@@ -1,0 +1,63 @@
+.mvp-vote-container form {
+    margin: 0em;
+}
+
+.mvp-vote-container header {
+    text-align: center;
+    margin: 0em;
+}
+
+.mvp-vote-container footer {
+    text-align: center;
+    margin: 0em;
+}
+
+.mvp-vote-container table {
+    width: auto;
+    height: auto;
+    min-width: 1em;
+    min-height: 1em;
+
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-top: 0em;
+}
+
+.mvp-vote-container img {
+    width: 3em;
+    height: 3em;
+
+    padding: 0.25em;
+    border-width: 0.25em;
+    border-style: solid;
+}
+
+.mvp-vote-container .vote-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.mvp-vote-container .vote-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.mvp-vote-container .vote-center button {
+    width: 100%;
+}

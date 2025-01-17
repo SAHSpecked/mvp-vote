@@ -1,0 +1,40 @@
+<div class="mvp-vote-container">
+    <form>
+        <main>
+            <table>
+                <tr>
+                    <th>User</th>
+                    <th>Voter</th>
+                    <th>Candidate</th>
+                </tr>
+                {{#each users}}
+                <tr>
+                    <td>
+                        <div class="vote-left">
+                            <img style="border-color: {{color}}" src="{{img}}" />
+                            <label for="{{userName}}Vote">{{userName}}{{#if userPronouns}} ({{userPronouns}}){{/if}}{{#if actorName}} [{{actorName}}]{{else}} [No character found]{{/if}}</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="vote-center">
+                            <input type="checkbox" id="{{userName}}Vote" name="vote" {{preChecked}} />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="vote-center">
+                            <input type="checkbox" id="{{userName}}Cand" name="candidate" {{preChecked}} />
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+            </table>
+        </main>
+
+        <footer>
+            <div class="vote-center">
+                <button type="button" id="requestVote-btn" ><i class="fas fa-vote-yea"></i>Request Vote</button>
+                <button type="button" id="cancel-btn"><i class="fas fa-times"></i>Cancel</button>
+            </div>
+        </footer>
+    </form>
+</div>

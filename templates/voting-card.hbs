@@ -1,0 +1,27 @@
+<div class="mvp-vote-container">
+    <form>
+        <main>
+            <table style="margin-bottom: 0em">
+                <tr>
+                    <th>User</th>
+                    <th>Cast Your Vote</th>
+                </tr>
+                {{#each candidates}}
+                <tr>
+                    <td>
+                        <div class="vote-left">
+                            <img style="border-color: {{color}}" src="{{img}}" />
+                            <label for="{{userName}}Vote">{{userName}}{{#if userPronouns}} ({{userPronouns}}){{/if}}{{#if actorName}} [{{actorName}}]{{else}} [No character found]{{/if}}</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="vote-center">
+                            <button type="button" id="voting-btn-{{userName}}" name="{{userId}}">Vote!</button>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+            </table>
+        </main>
+    </form>
+ </div>
